@@ -1,0 +1,3 @@
+com\csys\myproject\web\rest\TestUtil.class
+com\csys\myproject\web\rest\TestUtil$ZonedDateTimeMatcher.class
+com\csys\template\DemoApplicationTests.class
