@@ -22,8 +22,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -43,8 +41,7 @@ public class SocieteRessource {
     @Autowired
     SocieteService societeService;
     private static final String ENTITY_NAME = "Societe";
- 
-    @Transactional
+
     @GetMapping("")
     public List<SocieteDTO> findAll() {
         log.debug("REST request to societe findAll");
