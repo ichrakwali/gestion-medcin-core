@@ -1,17 +1,30 @@
+<<<<<<< HEAD
 com\csys\template\factory\AntecedentChirurgicalFactory.class
 com\csys\template\util\Preconditions.class
 com\csys\template\factory\MedecinFactory.class
+=======
+com\csys\template\util\Preconditions.class
+com\csys\template\Entity\Action.class
+com\csys\template\factory\MedecinFactory.class
+com\csys\template\Entity\QCertificatMedical.class
+com\csys\template\Entity\QExamenMedical.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 com\csys\template\dto\MedecinDTO.class
 com\csys\template\config\MessageConfig.class
 com\csys\template\Entity\Secretaire.class
 com\csys\template\web\rest\MedecinRessource.class
 com\csys\template\config\SecurityConfigProd.class
+<<<<<<< HEAD
+=======
+com\csys\template\factory\CertificatMedicalFactory.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 com\csys\template\web\rest\MethodeArgumentNotValidException.class
 com\csys\template\config\MessageConfigDev.class
 com\csys\template\repository\SocieteRepository.class
 com\csys\template\config\ApplicationProperties.class
 com\csys\template\dto\SecretaireDTO.class
 com\csys\template\web\rest\SocieteRessource.class
+<<<<<<< HEAD
 com\csys\template\web\rest\AntecedentChirurgicalRessource.class
 com\csys\template\service\AccidentTravailService.class
 com\csys\template\web\rest\util\HeaderUtil.class
@@ -23,12 +36,22 @@ com\csys\template\dto\AccidentTravailDTO.class
 com\csys\template\service\MedecinService.class
 com\csys\template\web\rest\errors\MyResourceNotFoundException.class
 com\csys\template\service\AntecedentChirurgicalService.class
+=======
+com\csys\template\service\ExamenMedicalService.class
+com\csys\template\web\rest\util\HeaderUtil.class
+com\csys\template\config\DatabaseConfiguration.class
+com\csys\template\config\ExposedResourceMessageBundleSource.class
+com\csys\template\Entity\QMedecin.class
+com\csys\template\service\MedecinService.class
+com\csys\template\web\rest\errors\MyResourceNotFoundException.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 com\csys\template\service\EmployeService.class
 com\csys\template\web\rest\errors\IllegalBusinessLogiqueException.class
 com\csys\template\web\rest\vm\LoggerVM.class
 com\csys\template\repository\MedecinRepository.class
 com\csys\template\config\RestTemplateConfig.class
 com\csys\template\util\RestPreconditions.class
+<<<<<<< HEAD
 com\csys\template\Entity\QAccidentTravail.class
 com\csys\template\web\rest\errors\ExceptionTranslator.class
 com\csys\template\web\rest\errors\FieldErrorVM.class
@@ -44,10 +67,28 @@ com\csys\template\repository\EmployeRepository.class
 com\csys\template\service\SecretaireService.class
 com\csys\template\repository\AntecedentChirurgicalRepository.class
 com\csys\template\config\SecurityConfig.class
+=======
+com\csys\template\web\rest\errors\ExceptionTranslator.class
+com\csys\template\Entity\CertificatMedical.class
+com\csys\template\web\rest\errors\FieldErrorVM.class
+com\csys\template\repository\SecretaireRepository.class
+com\csys\template\config\RestTemplateConfigProd.class
+com\csys\template\Entity\QSociete.class
+com\csys\template\Entity\Societe.class
+com\csys\template\service\SocieteService.class
+com\csys\template\repository\EmployeRepository.class
+com\csys\template\service\SecretaireService.class
+com\csys\template\factory\ExamenMedicalFactory.class
+com\csys\template\web\rest\ExamenMedicalRessource.class
+com\csys\template\config\SecurityConfig.class
+com\csys\template\dto\ActionDTO.class
+com\csys\template\factory\ActionFactory.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 com\csys\template\config\CacheConfiguration.class
 com\csys\template\Entity\Medecin.class
 com\csys\template\dto\SocieteDTO.class
 com\csys\template\util\LazyBooleanExpression.class
+<<<<<<< HEAD
 com\csys\template\factory\SocieteFactory.class
 com\csys\template\factory\SecretaireFactory.class
 com\csys\template\config\RequestLoggingInterceptor.class
@@ -64,9 +105,40 @@ com\csys\template\repository\AccidentTravailRepository.class
 com\csys\template\web\rest\EmployeRessource.class
 com\csys\template\config\ProfilesConstants.class
 com\csys\template\Entity\Employe.class
+=======
+com\csys\template\dto\ExamenMedicalDTO.class
+com\csys\template\factory\SocieteFactory.class
+com\csys\template\factory\SecretaireFactory.class
+com\csys\template\config\RequestLoggingInterceptor.class
+com\csys\template\service\ActionService.class
+com\csys\template\service\CertificatMedicalService.class
+com\csys\template\Entity\ExamenMedical.class
+com\csys\template\TemplateApplication.class
+com\csys\template\config\CorsConfig.class
+com\csys\template\Entity\QAction.class
+com\csys\template\dto\CertificatMedicalDTO.class
+com\csys\template\web\rest\SecretaireRessource.class
+com\csys\template\Entity\QSecretaire.class
+com\csys\template\config\OptionVersion.class
+com\csys\template\repository\ActionRepository.class
+com\csys\template\util\WhereClauseBuilder.class
+com\csys\template\dto\EmployeDTO.class
+com\csys\template\repository\ExamenMedicalRepository.class
+com\csys\template\web\rest\EmployeRessource.class
+com\csys\template\config\ProfilesConstants.class
+com\csys\template\Entity\Employe.class
+com\csys\template\web\rest\ActionRessource.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 MethodeArgumentNotValidException.class
 com\csys\template\factory\EmployeFactory.class
 com\csys\template\web\rest\util\PaginationUtil.class
 com\csys\template\config\SecurityConfig$1.class
+<<<<<<< HEAD
 com\csys\template\web\rest\errors\ErrorVM.class
 com\csys\template\Entity\QEmploye.class
+=======
+com\csys\template\repository\CertificatMedicalRepository.class
+com\csys\template\web\rest\errors\ErrorVM.class
+com\csys\template\Entity\QEmploye.class
+com\csys\template\web\rest\CertificatMedicalRessource.class
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

@@ -21,5 +21,9 @@ public interface SocieteRepository extends JpaRepository<Societe, Integer> {
     Societe findByCodesoc(Integer id);
 
 
+<<<<<<< HEAD
     void deleteByCodesoc(Integer id);
 }
+=======
+  }
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

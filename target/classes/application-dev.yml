@@ -13,9 +13,15 @@ spring:
             enabled: true
        
     datasource:
+<<<<<<< HEAD
         url: jdbc:sqlserver:// 127.0.0.1:1433; database=medecingb
         username: sa
         password: 123
+=======
+        url: jdbc:sqlserver://172.16.10.10\sql2014;database=Gcliniquedev
+        username: SA
+        password: m0dp@$$
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     jpa:
         database-platform: org.hibernate.dialect.SQLServer2012Dialect
         database: SQL_SERVER
@@ -36,7 +42,10 @@ spring:
             hibernate.cache.hazelcast.instance_name: hazelcast
             hibernate.cache.use_minimal_puts: true
             hibernate.cache.hazelcast.use_lite_member: true
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     profiles:
         include: no-liquibase
          
@@ -46,7 +55,11 @@ lang:
      
 server:
     contextPath: /demo-core
+<<<<<<< HEAD
     port: 9000
+=======
+    port: 8080
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json

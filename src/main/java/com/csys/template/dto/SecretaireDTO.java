@@ -13,6 +13,7 @@ import com.csys.template.Entity.Societe;
  * @author Dell
 */
 public class SecretaireDTO {
+<<<<<<< HEAD
     private Integer ncin;
     private String nomsec;
     private String prenomsec;
@@ -20,6 +21,33 @@ public class SecretaireDTO {
     private String emailsec;
     private Integer telsec;
     private SocieteDTO societe;
+=======
+
+   
+    private Integer ncin;
+    private String nomsec;
+    private String prenomsec;
+    private String adresseEmailsec;
+
+    public String getAdresseEmailsec() {
+        return adresseEmailsec;
+    }
+
+    public void setAdresseEmailsec(String adresseEmailsec) {
+        this.adresseEmailsec = adresseEmailsec;
+    }
+    private Integer telsec;
+
+    public Integer getTelsec() {
+        return telsec;
+    }
+
+    public void setTelsec(Integer telsec) {
+        this.telsec = telsec;
+    }
+    private Societe societe;
+//    private Integer codesoc;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public Integer getNcin() {
         return ncin;
@@ -45,6 +73,7 @@ public class SecretaireDTO {
         this.prenomsec = prenomsec;
     }
 
+<<<<<<< HEAD
     public String getAdressesec() {
         return adressesec;
     }
@@ -90,4 +119,25 @@ public class SecretaireDTO {
 
     public SecretaireDTO() {
     }
+=======
+   
+    
+
+    public Societe getSociete() {
+        return societe;
+    }
+
+    public void setSociete(Societe societe) {
+        this.societe = societe;
+    }
+
+//    public Integer getCodesoc() {
+//        return codesoc;
+//    }
+//
+//    public void setCodesoc(Integer codesoc) {
+//        this.codesoc = codesoc;
+//    }
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 }

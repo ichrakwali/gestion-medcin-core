@@ -24,9 +24,17 @@ public class QEmploye extends EntityPathBase<Employe> {
 
     public final StringPath adresse = createString("adresse");
 
+<<<<<<< HEAD
     public final DateTimePath<java.util.Date> dateNaissance = createDateTime("dateNaissance", java.util.Date.class);
 
     public final DateTimePath<java.util.Date> dateRecrutement = createDateTime("dateRecrutement", java.util.Date.class);
+=======
+    public final NumberPath<Integer> codesoc = createNumber("codesoc", Integer.class);
+
+    public final StringPath dateNaissance = createString("dateNaissance");
+
+    public final StringPath dateRecrutement = createString("dateRecrutement");
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public final StringPath delivree = createString("delivree");
 

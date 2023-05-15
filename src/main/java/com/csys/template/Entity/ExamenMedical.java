@@ -2,7 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -18,7 +22,11 @@ import javax.persistence.ManyToOne;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 @Entity
 public class ExamenMedical implements Serializable {
 
@@ -35,9 +43,15 @@ public class ExamenMedical implements Serializable {
     @JsonBackReference
     @ManyToOne()
     //(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+<<<<<<< HEAD
     //@JoinColumn(name = "nDossier")
    // private Employe employe;
    // @Column(name = "nDossier", insertable = false, updatable = false)
+=======
+    @JoinColumn(name = "nDossier")
+    private Employe employe;
+    @Column(name = "nDossier", insertable = false, updatable = false)
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     @JoinColumn(name = "codemed")
     private Medecin medecin;
     @Column(name = "codemed", insertable = false, updatable = false)
@@ -48,6 +62,7 @@ public class ExamenMedical implements Serializable {
         return idExamen;
     }
 
+<<<<<<< HEAD
     //public Employe getEmploye() {
        // return employe;
    // }
@@ -63,6 +78,23 @@ public class ExamenMedical implements Serializable {
    // public void setMedecin(Medecin medecin) {
      //   this.medecin = medecin;
     //}
+=======
+    public Employe getEmploye() {
+        return employe;
+    }
+
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
+    }
+
+    public Medecin getMedecin() {
+        return medecin;
+    }
+
+    public void setMedecin(Medecin medecin) {
+        this.medecin = medecin;
+    }
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public Secretaire getSecretaire() {
         return secretaire;
@@ -101,4 +133,7 @@ public class ExamenMedical implements Serializable {
     }
 
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

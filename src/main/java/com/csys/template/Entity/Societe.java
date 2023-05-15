@@ -52,9 +52,14 @@ public class Societe implements Serializable {
     private Integer telsociete;
     @Column(name = "email")
     private String emailsociete;
+<<<<<<< HEAD
     @OneToMany(mappedBy = "societe", cascade = CascadeType.ALL)
 
     private List<Employe> employes ;
+=======
+    @OneToMany(mappedBy="societe" )
+    private List<Employe> employes ; 
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public Societe(Integer codesoc, String nomsociete, String secteurActivite, String notes, Integer telsociete, String emailsociete, List<Employe> employes) {
         this.codesoc = codesoc;
@@ -64,7 +69,10 @@ public class Societe implements Serializable {
         this.telsociete = telsociete;
         this.emailsociete = emailsociete;
         this.employes = employes;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     }
 
     public Societe() {
@@ -125,6 +133,10 @@ public class Societe implements Serializable {
     public void setEmployes(List<Employe> employes) {
         this.employes = employes;
     }
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 
 }

@@ -11,8 +11,11 @@ import com.csys.template.Entity.Societe;
 import com.csys.template.dto.SocieteDTO;
 import com.csys.template.factory.SocieteFactory;
 import com.csys.template.repository.EmployeRepository;
+<<<<<<< HEAD
 //import com.csys.template.repository.MedecinRepository;
 //import com.csys.template.repository.SecretaireRepository;
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import com.csys.template.repository.MedecinRepository;
 import com.csys.template.repository.SecretaireRepository;
 import com.csys.template.repository.SocieteRepository;
@@ -32,6 +35,10 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class SocieteService {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     private final Logger log = LoggerFactory.getLogger(SocieteService.class);
 
     @Autowired
@@ -44,12 +51,15 @@ public class SocieteService {
     MedecinRepository medecinRepository;
 
 
+<<<<<<< HEAD
 public SocieteService(SocieteRepository societeRepository ,  MedecinRepository medecinRepository,EmployeRepository employeRepository,SecretaireRepository secretaireRepository){
     this.societeRepository = societeRepository;
     this.employeRepository= employeRepository;
     this.secretaireRepository=secretaireRepository;
     this.medecinRepository=medecinRepository;
 }
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     @Transactional(readOnly = true)
     public SocieteDTO findByCodesoc(Integer id) {
         Societe societe = societeRepository.findByCodesoc(id);
@@ -81,10 +91,13 @@ public SocieteService(SocieteRepository societeRepository ,  MedecinRepository m
         //societeRepository.save(societeInBase); (not utile puisque object societeInBase is an entity from DB)
         return SocieteFactory.societeTOSocieteDTO(societeInBase);
     }
+<<<<<<< HEAD
     public void delete(Integer id) {
         societeRepository.deleteByCodesoc(id);
     }
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 }
 

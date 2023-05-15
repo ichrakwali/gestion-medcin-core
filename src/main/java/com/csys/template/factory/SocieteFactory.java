@@ -143,17 +143,27 @@
 package com.csys.template.factory;
 
 import com.csys.template.Entity.Employe;
+<<<<<<< HEAD
 //import com.csys.template.Entity.Medecin;
 //import com.csys.template.Entity.QSociete;
 
 //import com.csys.template.Entity.Secretaire;
+=======
+import com.csys.template.Entity.Medecin;
+//import com.csys.template.Entity.QSociete;
+
+import com.csys.template.Entity.Secretaire;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import com.csys.template.Entity.Societe;
 import com.csys.template.dto.EmployeDTO;
 import com.csys.template.dto.MedecinDTO;
 import com.csys.template.dto.SecretaireDTO;
 
 import com.csys.template.dto.SocieteDTO;
+<<<<<<< HEAD
 import org.springframework.data.keyvalue.core.KeyValueOperations;
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 import java.util.ArrayList;
 
@@ -175,6 +185,10 @@ public class SocieteFactory {
         return societe;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public static SocieteDTO societeTOSocieteDTO(Societe societe) {
         if (societe != null) {
             SocieteDTO societeDTO = new SocieteDTO();

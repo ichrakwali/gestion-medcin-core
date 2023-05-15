@@ -2,7 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -20,7 +24,11 @@ import javax.persistence.ManyToOne;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 @Entity
 public class CertificatMedical implements Serializable {
     @Id 
@@ -36,7 +44,11 @@ public class CertificatMedical implements Serializable {
     @ManyToOne()
         //(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     @JoinColumn(name = "nDossier")
+<<<<<<< HEAD
   //  private Employe employe;
+=======
+    private Employe employe;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 @Column(name= "nDossier", insertable = false, updatable = false)
 
     public Integer getIdcertificat() {
@@ -81,6 +93,7 @@ public class CertificatMedical implements Serializable {
 
    
 
+<<<<<<< HEAD
     //public Employe getEmploye() {
       //  return employe;
   //  }
@@ -92,3 +105,15 @@ public class CertificatMedical implements Serializable {
    
 }
 */
+=======
+    public Employe getEmploye() {
+        return employe;
+    }
+
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
+    }
+    
+   
+}
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

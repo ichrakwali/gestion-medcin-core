@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.dto;
 
 import com.csys.template.Entity.ExamenMedical;
@@ -11,7 +14,11 @@ import com.csys.template.Entity.ExamenMedical;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 public class ActionDTO {
     private Integer idaction;
     private String type;
@@ -52,4 +59,7 @@ public class ActionDTO {
      
 
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

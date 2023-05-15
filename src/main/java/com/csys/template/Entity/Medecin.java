@@ -29,11 +29,16 @@ import javax.persistence.ManyToOne;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 @Entity
 public class Medecin implements Serializable {
      @Id 
      @GeneratedValue(strategy=GenerationType.IDENTITY)
+<<<<<<< HEAD
      @Column(name="code_med")
     private Integer codemed;
     @Column(name=" nom_med")
@@ -53,6 +58,10 @@ public class Medecin implements Serializable {
     @JoinColumn(name = "code")
     private Societe societe;
 
+=======
+       @JsonProperty("codemed")
+    private Integer codemed;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public Integer getCodemed() {
         return codemed;
@@ -62,6 +71,33 @@ public class Medecin implements Serializable {
         this.codemed = codemed;
     }
 
+<<<<<<< HEAD
+=======
+   
+
+  
+    private String nommed;
+    private String prenommed;
+    private String adresseEmailmed;
+    private Integer telmed;
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @JoinColumn(name = "codesoc")
+    private Societe societe;
+    @Column(name= "codesoc", insertable = false, updatable = false)
+   
+    public Societe getSociete() {
+        return societe;
+    }
+
+    public void setSociete(Societe societe) {
+        this.societe = societe;
+    }
+
+   
+   
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public String getNommed() {
         return nommed;
     }
@@ -78,6 +114,7 @@ public class Medecin implements Serializable {
         this.prenommed = prenommed;
     }
 
+<<<<<<< HEAD
     public String getAdresse() {
         return adresse;
     }
@@ -92,6 +129,14 @@ public class Medecin implements Serializable {
 
     public void setEmailmed(String emailmed) {
         this.emailmed = emailmed;
+=======
+    public String getAdresseEmailmed() {
+        return adresseEmailmed;
+    }
+
+    public void setAdresseEmailmed(String adresseEmailmed) {
+        this.adresseEmailmed = adresseEmailmed;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     }
 
     public Integer getTelmed() {
@@ -102,6 +147,7 @@ public class Medecin implements Serializable {
         this.telmed = telmed;
     }
 
+<<<<<<< HEAD
     public String getEmplacement() {
         return emplacement;
     }
@@ -134,3 +180,25 @@ public class Medecin implements Serializable {
 
 
 }
+=======
+    
+   
+//
+//    public void setExamenMedicaux(ExamenMedicaux examenMedicaux) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
+//    public void setSociete(Societe societe) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
+//    public void setExamenMedicaux(ExamenMedicaux examenMedicaux) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//    
+
+
+   
+    
+}
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

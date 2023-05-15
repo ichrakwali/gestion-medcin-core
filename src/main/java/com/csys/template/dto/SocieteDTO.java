@@ -6,8 +6,13 @@
 package com.csys.template.dto;
 
 import com.csys.template.Entity.Employe;
+<<<<<<< HEAD
 //import com.csys.template.Entity.Medecin;
 //import com.csys.template.Entity.Secretaire;
+=======
+import com.csys.template.Entity.Medecin;
+import com.csys.template.Entity.Secretaire;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
@@ -30,7 +35,10 @@ public class SocieteDTO {
     private String nomsociete;
     private String secteurActivite;
     private String notes;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     private Integer telsociete;
     private String emailsociete;
 
@@ -85,11 +93,14 @@ public class SocieteDTO {
     public SocieteDTO() {
     }
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public SocieteDTO(Integer codesoc, String nomsociete, String secteurActivite, String notes, Integer telsociete, String emailsociete) {
         this.codesoc = codesoc;
         this.nomsociete = nomsociete;
@@ -97,7 +108,10 @@ public class SocieteDTO {
         this.notes = notes;
         this.telsociete = telsociete;
         this.emailsociete = emailsociete;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     }
 
   

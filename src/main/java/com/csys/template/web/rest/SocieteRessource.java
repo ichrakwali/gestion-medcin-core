@@ -15,8 +15,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.*;
 
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -37,10 +47,13 @@ public class SocieteRessource {
     SocieteService societeService;
     private static final String ENTITY_NAME = "Societe";
 
+<<<<<<< HEAD
     public SocieteRessource(SocieteService societeService) {
         this.societeService = societeService;
     }
 
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     @GetMapping("")
     public List<SocieteDTO> findAll() {
         log.debug("REST request to societe findAll");
@@ -61,7 +74,11 @@ public class SocieteRessource {
             throw new MethodArgumentNotValidException(null, bindingResults);
         }
         SocieteDTO result = societeService.save(societe);
+<<<<<<< HEAD
         return ResponseEntity.created(new URI("/api/societes/" + result.getCodesoc())).body(result);
+=======
+        return ResponseEntity.created(new URI("/soc/societes/" + result.getCodesoc())).body(result);
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     }
 
     @PutMapping("/{id}")
@@ -71,11 +88,14 @@ public class SocieteRessource {
         return ResponseEntity.ok(result);
 
     }
+<<<<<<< HEAD
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteEmployeDTO(@PathVariable Integer id) {
         societeService.delete(id);
         return ResponseEntity.ok().build();
     }
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 }
 

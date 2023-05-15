@@ -2,7 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.factory;
 
 import com.csys.template.Entity.CertificatMedical;
@@ -14,7 +18,11 @@ import java.util.List;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 public class CertificatMedicalFactory {
     
     private static CertificatMedical certificatMedical;
@@ -26,7 +34,11 @@ public class CertificatMedicalFactory {
         certificatMedical.setNcss(certificatMedicalDTO.getNcss());
         certificatMedical.setDateExamen(certificatMedicalDTO.getDateExamen());
        
+<<<<<<< HEAD
       // certificatMedical.setEmploye(certificatMedicalDTO.getEmploye());
+=======
+       certificatMedical.setEmploye(certificatMedicalDTO.getEmploye());
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         
 //      certificatMedical.setEmploye(CertificatMedicalFactory.certificatMedicalDTOTOCertificatMedical(certificatMedicalDTO.getEmploye()));
         return certificatMedical;
@@ -40,7 +52,11 @@ public class CertificatMedicalFactory {
             certificatMedicalDTO.setNatureActivite(certificatMedical.getNatureActivite());
             certificatMedicalDTO.setNcss(certificatMedical.getNcss());
             certificatMedicalDTO.setDateExamen(certificatMedical.getDateExamen());
+<<<<<<< HEAD
           //   certificatMedicalDTO.setEmploye(certificatMedical.getEmploye());
+=======
+             certificatMedicalDTO.setEmploye(certificatMedical.getEmploye());
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         
             
 //            certificatMedicalDTO.setEmploye(CertificatMedicalFactory.CertificatMedicalTOCertificatMedicalDTO(certificatMedical.getEmploye())); 
@@ -68,4 +84,7 @@ public class CertificatMedicalFactory {
     
     
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

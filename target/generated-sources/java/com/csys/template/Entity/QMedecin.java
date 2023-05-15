@@ -22,6 +22,7 @@ public class QMedecin extends EntityPathBase<Medecin> {
 
     public static final QMedecin medecin = new QMedecin("medecin");
 
+<<<<<<< HEAD
     public final StringPath adresse = createString("adresse");
 
     public final NumberPath<Integer> codemed = createNumber("codemed", Integer.class);
@@ -30,6 +31,12 @@ public class QMedecin extends EntityPathBase<Medecin> {
 
     public final StringPath emplacement = createString("emplacement");
 
+=======
+    public final StringPath adresseEmailmed = createString("adresseEmailmed");
+
+    public final NumberPath<Integer> codemed = createNumber("codemed", Integer.class);
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public final StringPath nommed = createString("nommed");
 
     public final StringPath prenommed = createString("prenommed");

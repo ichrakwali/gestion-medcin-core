@@ -22,9 +22,13 @@ public class QSecretaire extends EntityPathBase<Secretaire> {
 
     public static final QSecretaire secretaire = new QSecretaire("secretaire");
 
+<<<<<<< HEAD
     public final StringPath adressesec = createString("adressesec");
 
     public final StringPath emailsec = createString("emailsec");
+=======
+    public final StringPath adresseEmailsec = createString("adresseEmailsec");
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public final NumberPath<Integer> ncin = createNumber("ncin", Integer.class);
 

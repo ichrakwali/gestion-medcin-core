@@ -2,7 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.service;
 
 import com.csys.template.Entity.ExamenMedical;
@@ -20,7 +24,11 @@ import org.springframework.stereotype.Service;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
     @Service
+=======
+ */   @Service
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 @Transactional
 public class ExamenMedicalService {
  
@@ -93,5 +101,9 @@ public class ExamenMedicalService {
     }
    
 }
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 

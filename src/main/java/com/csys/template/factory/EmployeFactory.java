@@ -18,6 +18,7 @@ public class EmployeFactory {
  
     public static Employe employeDTOTOEmploye(EmployeDTO employeDTO){
      Employe employe =new Employe();
+<<<<<<< HEAD
 
         employe.setNom(employeDTO.getNom());
         employe.setPrenom(employeDTO.getPrenom());
@@ -35,6 +36,24 @@ public class EmployeFactory {
         employe.setDiplomes(employeDTO.getDiplomes());
         employe.setDateRecrutement(employeDTO.getDateRecrutement());
 
+=======
+        employe.setnDossier(employeDTO.getnDossier());
+        employe.setNom(employeDTO.getNom());
+        employe.setPrenom(employeDTO.getPrenom());
+        employe.setDelivree(employeDTO.getDelivree());
+        employe.setSituationmilitaire(employeDTO.getSituationmilitaire());
+        employe.setSituationFamille(employeDTO.getSituationFamille());
+        employe.setnAffectationCnss(employeDTO.getnAffectationCnss());
+        employe.setDiplomes(employeDTO.getDiplomes());
+        employe.setMatricule(employeDTO.getMatricule()); 
+        employe.setnCin(employeDTO.getnCin());
+        employe.setSexe(employeDTO.getSexe());
+        employe.setNiveauEtudes(employeDTO.getNiveauEtudes());
+       
+        employe.setDateRecrutement(employeDTO.getDateRecrutement());
+        employe.setAdresse(employeDTO.getAdresse());
+        employe.setDateNaissance(employeDTO.getDateNaissance());
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
        employe.setSociete(SocieteFactory.SocieteDTOTOSociete(employeDTO.getSociete()));
         return employe;
               }
@@ -56,10 +75,17 @@ public class EmployeFactory {
             employeDTO.setNiveauEtudes(employe.getNiveauEtudes());
             employeDTO.setDateRecrutement(employe.getDateRecrutement());  
             employeDTO.setAdresse(employe.getAdresse());
+<<<<<<< HEAD
             employeDTO.setTelephone(employe.getTelephone());
             employeDTO.setDateNaissance(employe.getDateNaissance());
 
             employeDTO.setSociete(SocieteFactory.societeTOSocieteDTO(employe.getSociete()));
+=======
+            employeDTO.setDateNaissance(employe.getDateNaissance());
+//            employeDTO.setCodesoc(employe.getCodesoc()); 3leh 
+
+        
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
        return employeDTO;
     } else {
     return null;

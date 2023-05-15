@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 package com.csys.template.dto;
+<<<<<<< HEAD
+=======
+import com.csys.template.Entity.Societe;
+import com.fasterxml.jackson.annotation.JsonProperty;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import java.util.Date;
 
 /**
@@ -12,10 +17,17 @@ import java.util.Date;
  */
 public class EmployeDTO {
      
+<<<<<<< HEAD
     private  Integer nDossier;
     private String nom;
     private String prenom;
     private Date dateNaissance;
+=======
+    private Integer nDossier;
+    private String nom;
+    private String prenom;
+    private String dateNaissance;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     private String sexe;
     private String adresse;
     private Integer telephone;
@@ -27,10 +39,17 @@ public class EmployeDTO {
     private String situationmilitaire;
     private String niveauEtudes;
     private String diplomes;
+<<<<<<< HEAD
     private Date dateRecrutement;
    private SocieteDTO societe;
 
    public Integer getnDossier() {
+=======
+    private String dateRecrutement;
+   private SocieteDTO societe;
+
+    public Integer getnDossier() {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         return nDossier;
     }
 
@@ -54,11 +73,19 @@ public class EmployeDTO {
         this.prenom = prenom;
     }
 
+<<<<<<< HEAD
     public Date getDateNaissance() {
         return dateNaissance;
     }
 
     public void setDateNaissance( Date dateNaissance) {
+=======
+    public String getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(String dateNaissance) {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.dateNaissance = dateNaissance;
     }
 
@@ -78,6 +105,17 @@ public class EmployeDTO {
         this.adresse = adresse;
     }
 
+<<<<<<< HEAD
+=======
+    public Integer getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(Integer telephone) {
+        this.telephone = telephone;
+    }
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public Integer getnAffectationCnss() {
         return nAffectationCnss;
     }
@@ -142,15 +180,24 @@ public class EmployeDTO {
         this.diplomes = diplomes;
     }
 
+<<<<<<< HEAD
     public Date getDateRecrutement() {
         return dateRecrutement;
     }
 
     public void setDateRecrutement(Date dateRecrutement) {
+=======
+    public String getDateRecrutement() {
+        return dateRecrutement;
+    }
+
+    public void setDateRecrutement(String dateRecrutement) {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.dateRecrutement = dateRecrutement;
     }
 
     public SocieteDTO getSociete() {
+<<<<<<< HEAD
        return societe;
    }
 
@@ -173,6 +220,19 @@ public class EmployeDTO {
 
 
     public EmployeDTO(Integer nDossier, String nom, String prenom, Date dateNaissance, String sexe, String adresse, Integer telephone, Integer nAffectationCnss, String matricule, Integer nCin, String delivree, String situationFamille, String situationmilitaire, String niveauEtudes, String diplomes, Date dateRecrutement,SocieteDTO societe) {
+=======
+        return societe;
+    }
+
+    public void setSociete(SocieteDTO societe) {
+        this.societe = societe;
+    }
+
+    public EmployeDTO() {
+    }
+
+    public EmployeDTO(Integer nDossier, String nom, String prenom, String dateNaissance, String sexe, String adresse, Integer telephone, Integer nAffectationCnss, String matricule, Integer nCin, String delivree, String situationFamille, String situationmilitaire, String niveauEtudes, String diplomes, String dateRecrutement, SocieteDTO societe) {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.nDossier = nDossier;
         this.nom = nom;
         this.prenom = prenom;
@@ -189,9 +249,19 @@ public class EmployeDTO {
         this.niveauEtudes = niveauEtudes;
         this.diplomes = diplomes;
         this.dateRecrutement = dateRecrutement;
+<<<<<<< HEAD
        this.societe = societe;
     }
 
 
 
+=======
+        this.societe = societe;
+    }
+   
+
+  
+
+    
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 }

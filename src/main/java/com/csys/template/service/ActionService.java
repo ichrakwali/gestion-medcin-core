@@ -2,6 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
 package com.csys.template.service;
 
@@ -10,6 +11,19 @@ import com.csys.template.dto.ActionDTO;
 import com.csys.template.factory.ActionFactory;
 import com.csys.template.repository.ActionRepository;
 
+=======
+ */
+package com.csys.template.service;
+
+import com.csys.template.Entity.Action;
+import com.csys.template.Entity.Action;
+import com.csys.template.dto.ActionDTO;
+import com.csys.template.dto.ActionDTO;
+import com.csys.template.factory.ActionFactory;
+import com.csys.template.factory.ActionFactory;
+import com.csys.template.repository.ActionRepository;
+import com.csys.template.web.rest.ActionRessource;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 import java.util.List;
 import javax.transaction.Transactional;
 import org.slf4j.Logger;
@@ -20,7 +34,11 @@ import org.springframework.stereotype.Service;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 @Service
 @Transactional
@@ -87,4 +105,8 @@ public class ActionService {
 
     
 
+<<<<<<< HEAD
 */
+=======
+}
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

@@ -2,7 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+<<<<<<< HEAD
  *//*
+=======
+ */
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 package com.csys.template.Entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -18,9 +22,18 @@ import javax.persistence.ManyToOne;
 /**
  *
  * @author Dell
+<<<<<<< HEAD
 
 @Entity
 public class Action implements Serializable {
+=======
+ */
+@Entity
+public class Action implements Serializable {
+
+   
+    
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idaction;
@@ -68,4 +81,7 @@ public class Action implements Serializable {
         this.examenMedical = examenMedical;
     }
 }
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d

@@ -226,7 +226,15 @@
                             <artifactId>javassist</artifactId>
                             <version>${javassist.version}</version>
                         </dependency>
+<<<<<<< HEAD
 
+=======
+                        <dependency>
+                            <groupId>org.liquibase.ext</groupId>
+                            <artifactId>liquibase-hibernate5</artifactId>
+                            <version>${liquibase-hibernate5.version}</version>
+                        </dependency>
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
                         <dependency>
                             <groupId>org.springframework.boot</groupId>
                             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -368,7 +376,11 @@
                         <configuration>
                             <skipTests>true</skipTests>
                             <!-- Force alphabetical order to have a reproducible build -->
+<<<<<<< HEAD
 
+=======
+                            <spring.profiles.active>prod</spring.profiles.active>
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
                         </configuration>
                     </plugin>
                 </plugins>

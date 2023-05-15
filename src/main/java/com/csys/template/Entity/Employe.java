@@ -5,9 +5,26 @@
  */
 package com.csys.template.Entity;
 
+<<<<<<< HEAD
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
+=======
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import java.io.Serializable;
+import java.util.Date;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
 /**
  *
@@ -15,6 +32,7 @@ import javax.persistence.*;
  */
 @Entity
 public class Employe implements Serializable {
+<<<<<<< HEAD
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "nDossier")
@@ -55,11 +73,44 @@ public class Employe implements Serializable {
 
     private Societe societe;
 
+=======
+     @Id 
+     @GeneratedValue(strategy=GenerationType.IDENTITY)
+      
+    private Integer nDossier;
+    private String nom;
+    private String prenom;
+    private String dateNaissance;
+    private String sexe;
+    private String adresse;
+    private Integer telephone;
+    private Integer nAffectationCnss;
+    private String matricule;
+    private Integer nCin;
+    private String delivree;
+    private String situationFamille;
+    private String situationmilitaire;
+    private String niveauEtudes;
+    private String diplomes;
+    private String dateRecrutement;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @JoinColumn(name = "codesoc")
+    private Societe societe;
+    @Column(name= "codesoc", insertable = false, updatable = false)
+    private Integer codesoc;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 
     public Integer getnDossier() {
         return nDossier;
     }
 
+<<<<<<< HEAD
+=======
+    public void setnDossier(Integer nDossier) {
+        this.nDossier = nDossier;
+    }
+
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
     public String getNom() {
         return nom;
     }
@@ -76,11 +127,19 @@ public class Employe implements Serializable {
         this.prenom = prenom;
     }
 
+<<<<<<< HEAD
     public Date getDateNaissance() {
         return dateNaissance;
     }
 
     public void setDateNaissance(Date dateNaissance) {
+=======
+    public String getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(String dateNaissance) {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.dateNaissance = dateNaissance;
     }
 
@@ -172,11 +231,19 @@ public class Employe implements Serializable {
         this.diplomes = diplomes;
     }
 
+<<<<<<< HEAD
     public Date getDateRecrutement() {
         return dateRecrutement;
     }
 
     public void setDateRecrutement(Date dateRecrutement) {
+=======
+    public String getDateRecrutement() {
+        return dateRecrutement;
+    }
+
+    public void setDateRecrutement(String dateRecrutement) {
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.dateRecrutement = dateRecrutement;
     }
 
@@ -188,6 +255,7 @@ public class Employe implements Serializable {
         this.societe = societe;
     }
 
+<<<<<<< HEAD
     public Employe(Integer telephone) {
         this.telephone = telephone;
     }
@@ -202,6 +270,27 @@ public class Employe implements Serializable {
         this.sexe = sexe;
         this.adresse = adresse;
             
+=======
+    public Integer getCodesoc() {
+        return codesoc;
+    }
+
+    public void setCodesoc(Integer codesoc) {
+        this.codesoc = codesoc;
+    }
+
+    public Employe() {
+    }
+
+    public Employe(Integer nDossier, String nom, String prenom, String dateNaissance, String sexe, String adresse, Integer telephone, Integer nAffectationCnss, String matricule, Integer nCin, String delivree, String situationFamille, String situationmilitaire, String niveauEtudes, String diplomes, String dateRecrutement, Societe societe, Integer codesoc) {
+        this.nDossier = nDossier;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.dateNaissance = dateNaissance;
+        this.sexe = sexe;
+        this.adresse = adresse;
+        this.telephone = telephone;
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
         this.nAffectationCnss = nAffectationCnss;
         this.matricule = matricule;
         this.nCin = nCin;
@@ -212,9 +301,19 @@ public class Employe implements Serializable {
         this.diplomes = diplomes;
         this.dateRecrutement = dateRecrutement;
         this.societe = societe;
+<<<<<<< HEAD
     }
 
 
     public Employe() {
     }
+=======
+        this.codesoc = codesoc;
+    }
+   
+
+    
+    
+    
+>>>>>>> 41fdbb6895f2341fb31a351233b924053da3133d
 }
